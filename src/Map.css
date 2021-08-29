@@ -1,0 +1,21 @@
+.map_container{
+    height: 500px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    min-width: 95%;
+    min-height: 100%;
+}
+
+.map_container .leaflet-container{
+    object-fit: cover;
+    min-height: 100%;
+}
+
+.map_container .leaflet-container.leaflet-touch-zoom {
+    touch-action: pan-x pan-y;
+}
